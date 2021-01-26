@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "../../modules/zephyr"
+    },
+    {
+      "path": "../../modules/hal/cmsis"
+    },
+    {
+      "path": "../../modules/hal/st"
+    },
+    {
+      "path": "../../modules/hal/stm32"
+    },
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "files.associations": {}
+  }
+}

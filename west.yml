@@ -1,0 +1,36 @@
+west:
+  url: https://github.com/zephyrproject-rtos/west
+  revision: v0.8.0
+
+manifest:
+  defaults:
+    remote: upstream
+
+  remotes:
+    - name: upstream
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      path: modules/zephyr
+      west-commands: scripts/west-commands.yml
+      revision: cd7461495f1aeb4561d6a7e96c9f37b029805694
+
+    - name: cmsis
+      revision: 421dcf358fa420e9721a8452c647f0d42af8d68c
+      path: modules/hal/cmsis
+
+    - name: hal_st
+      revision: b52fdbf4b62439be9fab9bb4bae9690a42d2fb14
+      path: modules/hal/st
+
+    - name: hal_stm32
+      revision: cc8731dba4fd9c57d7fe8ea6149828b89c2bd635
+      path: modules/hal/stm32
+
+    - name: tinycrypt
+      path: modules/crypto/tinycrypt
+      revision: 3e9a49d2672ec01435ffbf0d788db6d95ef28de0
+
+  self:
+    path: zephyr-workspace
